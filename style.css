@@ -168,8 +168,8 @@ footer {
 
   .like-content {
     min-height: 58svh;
-    max-height: 58svh;
-    overflow-y: auto;
+    max-height: 77svh;
+    /* overflow-y: auto; */
   }
 
   footer {
