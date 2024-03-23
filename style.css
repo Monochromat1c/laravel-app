@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Fax";
+  scroll-behavior: smooth;
+  /* border: 0.5px dotted green; */
+  /* color: azure; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  /* flex: 0 0 10svh; */
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* max-width: 70%; */
+  /* background: rgb(238, 234, 234); */
+}
+
+.header {
+  margin: 1.5rem auto;
+  background: #f7dede;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  box-shadow: -1px 8px 9px #171c1f;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3rem;
+  padding: 1rem 2rem 1rem 2rem;
+  min-width: 36%;
+}
+
+.header > h2 {
+  text-align: center;
+  font-family: "Lucida Handwriting";
+  font-style: cursive;
+  word-spacing: 1rem;
+}
+
+.you {
+  font-family: "Lucida Handwriting";
+  font-style: cursive;
+  color: rgb(207, 21, 21);
+}
+
+.body-wrapper {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.body-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: 50svw;
+  max-width: 80svw;
+  min-height: 50svh;
+  /* margin: 1rem; */
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.box {
+  box-shadow: -1px 2px 9px #171c1f;
+  background: rgb(209, 202, 202);
+  border-radius: 2rem;
+  padding: 1rem;
+  /* max-height: 66svh;
+  overflow-y: auto; */
+}
+
+.like-content {
+  min-height: 20svh;
+}
+
+.header-box {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(252, 233, 233);
+  border-radius: 2rem;
+  box-shadow: -1px 2px 9px #171c1f;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  min-width: 20%;
+  text-align: center;
+}
+
+.paragraph-title {
+  font-family: "Lucida Handwriting";
+  font-style: cursive;
+}
+
+.paragraph {
+  margin-top: 1rem;
+}
+
+.gif {
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gif > img {
+  border-radius: 3rem;
+}
+
+footer {
+  background: #ecbbbb;
+  padding: 1rem;
+  bottom: 0;
+  color: #000000;
+  min-height: 20svh;
+}
+
+.disclaimer {
+  margin: 1rem auto;
+  background: #eedcdc;
+  max-width: 60%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.important {
+  margin: 1rem auto;
+  background: #910707;
+  color: #f7dede;
+  max-width: 60%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    /* Change max-width to 90% for mobile */
+    max-width: 90%;
+  }
+
+  .header-box {
+    max-width: 90%;
+  }
+
+  .body-wrapper {
+    max-width: 100%;
+  }
+
+  .like-content {
+    min-height: 58svh;
+    max-height: 58svh;
+    overflow-y: auto;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+  .gif > img {
+    display: grid;
+    place-items: center;
+    max-height: 30svh;
+  }
+
+  .disclaimer {
+    min-width: 90%;
+  }
+
+  .important {
+    min-width: 90%;
+  }
+}
